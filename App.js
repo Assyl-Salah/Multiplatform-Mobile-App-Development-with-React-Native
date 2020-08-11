@@ -1,16 +1,12 @@
 import * as React from "react";
-import { View, Text } from "react-native";
 
-export default function App() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
-  );
+import Main from './components/MainComponent';
+import { render } from "react-dom";
+export default class App extends React.Component {
+  render() {
+    return (
+      <Main />
+    );
+  }
 }
+// export default App;
